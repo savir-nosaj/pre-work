@@ -1,0 +1,84 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/starwars-bg.webp");
+}
+
+/* Font Stlying */
+.font-size-medium {
+    font-size: 2rem;
+}
+
+.font-size-large {
+    font-size: 3rem;
+}
+
+/* Effects */
+.padding-top-medium {
+    padding-top: 3rem;
+}
+.padding-bottom-medium {
+    padding-top: 3rem;
+}
+
+/* Colors */
+.white {color: #fff;}
+
+/* Utilities */
+.container {
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 1.25rem 2rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.13);
+    border: .1rem solid #884020;
+    color: #fff;
+    font-weight: 700;
+}.btn:hover {
+    cursor: pointer;
+    border: .1rem solid #f4a240;
+    background-color: hsla(0, 0%, 75%, 0);
+}.btn:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.query-result {
+    text-decoration: none;
+}.query-result:hover {
+    color: #f4a240;
+}.query-result:active {
+    color: #884020;
+}
+
+/* Sections */
+.header {
+    margin: 0 auto;
+    max-width: 70rem;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.2)
+    );
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.buttons {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#result {
+    width: 30%;
+    margin: 0 auto;
+}#result > p {
+    color: #fff;
+}

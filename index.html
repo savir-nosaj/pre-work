@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Project</title>
-    <script src="script.js" async></script>
-</head>
-<body>
-    <p>API Only Allows for 10 results per request</p>
-    <button onclick="callPeople()">People</button>
-    <button onclick="callPlanets()">Planets</button>
-    <button onclick="callSpecies()">Species</button>
-    <div id="result"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>API Project</title>
+        <!-- Javascript -->
+        <script src="script.js" async></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header padding-top-medium">
+            <h1 class="font-size-large white">SWAPI - The Star Wars API</h1>
+            <p class="font-size-medium white">API only allows for 10 results per request</p>
 
-</body>
+            <div class="buttons">
+                <button class="btn" onclick="callFilms()">Films</button>
+                <button class="btn" onclick="callPeople()">People</button>
+                <button class="btn" onclick="callPlanets()">Planets</button>
+                <button class="btn" onclick="callSpecies()">Species</button>
+                <button class="btn" onclick="callStarships()">Starships</button>
+                <button class="btn" onclick="callVehicles()">Vehicles</button>
+            </div>
+        </div>
+
+        <div class="container padding-top-medium">
+            <div id="result"></div>
+        </div>
+
+    </body>
 </html>
