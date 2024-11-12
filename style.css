@@ -10,9 +10,13 @@ body {
     background-image: url("img/starwars-bg.webp");
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Font Stlying */
 .font-size-medium {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .font-size-large {
@@ -50,9 +54,10 @@ body {
     margin-right: 2rem;
 }
 
-.query-result {
-    text-decoration: none;
-}.query-result:hover {
+.query-result:visited {
+    color: #e3c903;
+}
+.query-result:hover {
     color: #f4a240;
 }.query-result:active {
     color: #884020;
@@ -63,8 +68,8 @@ body {
     margin: 0 auto;
     max-width: 70rem;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.15),
-        rgba(0, 0, 0, 0.2)
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.12)
     );
     background-position: bottom;
     background-size: cover;

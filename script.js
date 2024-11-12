@@ -1,3 +1,4 @@
+// Variables
 let query = document.getElementById('result');
 
 function callFilms() {
@@ -8,13 +9,12 @@ function callFilms() {
     .then(res => res.json())
     .then(data => {
         for(x in data.result) {
-            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.result[x].uid + `">` + data.result[x].properties.title + `</a></p>`;
+            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.result[x].uid + `" target="_blank">` + data.result[x].properties.title + `</a></p>`;
         }
         console.log(data.result);
     })
     .catch(err => console.error(err))
 }
-
 function callPeople() {
     let request = "https://www.swapi.tech/api/people/";
     query.innerHTML = "";
@@ -23,13 +23,12 @@ function callPeople() {
     .then(res => res.json())
     .then(data => {
         for(x in data.results) {
-            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `">` + data.results[x].name + `</a></p>`;
+            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
         console.log(data.results);
     })
     .catch(err => console.error(err))
 }
-
 function callPlanets() {
     let request = "https://www.swapi.tech/api/planets/";
     query.innerHTML = "";
@@ -38,13 +37,12 @@ function callPlanets() {
     .then(res => res.json())
     .then(data => {
         for(x in data.results) {
-            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `">` + data.results[x].name + `</a></p>`;
+            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
         console.log(data.results);
     })
     .catch(err => console.error(err))
 }
-
 function callSpecies() {
     let request = "https://www.swapi.tech/api/species/";
     query.innerHTML = "";
@@ -53,13 +51,12 @@ function callSpecies() {
     .then(res => res.json())
     .then(data => {
         for(x in data.results) {
-            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `">` + data.results[x].name + `</a></p>`;
+            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
         console.log(data.results);
     })
     .catch(err => console.error(err))
 }
-
 function callStarships() {
     let request = "https://www.swapi.tech/api/starships/";
     query.innerHTML = "";
@@ -68,13 +65,12 @@ function callStarships() {
     .then(res => res.json())
     .then(data => {
         for(x in data.results) {
-            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `">` + data.results[x].name + `</a></p>`;
+            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
         console.log(data.results);
     })
     .catch(err => console.error(err))
 }
-
 function callVehicles() {
     let request = "https://www.swapi.tech/api/vehicles/";
     query.innerHTML = "";
@@ -83,7 +79,7 @@ function callVehicles() {
     .then(res => res.json())
     .then(data => {
         for(x in data.results) {
-            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `">` + data.results[x].name + `</a></p>`;
+            query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
         console.log(data.results);
     })
