@@ -11,7 +11,6 @@ function callFilms() {
         for(x in data.result) {
             query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.result[x].uid + `" target="_blank">` + data.result[x].properties.title + `</a></p>`;
         }
-        console.log(data.result);
     })
     .catch(err => console.error(err))
 }
@@ -25,7 +24,6 @@ function callPeople() {
         for(x in data.results) {
             query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
-        console.log(data.results);
     })
     .catch(err => console.error(err))
 }
@@ -39,7 +37,6 @@ function callPlanets() {
         for(x in data.results) {
             query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
-        console.log(data.results);
     })
     .catch(err => console.error(err))
 }
@@ -53,7 +50,6 @@ function callSpecies() {
         for(x in data.results) {
             query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
-        console.log(data.results);
     })
     .catch(err => console.error(err))
 }
@@ -67,7 +63,6 @@ function callStarships() {
         for(x in data.results) {
             query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
-        console.log(data.results);
     })
     .catch(err => console.error(err))
 }
@@ -81,7 +76,6 @@ function callVehicles() {
         for(x in data.results) {
             query.innerHTML += `<p class="font-size-medium no-margin-padding"><a class="query-result white" href="` + request + data.results[x].uid + `" target="_blank">` + data.results[x].name + `</a></p>`;
         }
-        console.log(data.results);
     })
     .catch(err => console.error(err))
 }
