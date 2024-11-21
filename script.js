@@ -28,7 +28,6 @@ function callPeople() {
         console.log(data.results);
     })
     .catch(err => console.error(err))
-    print(request);
 }
 function callPlanets() {
     let request = "https://www.swapi.tech/api/planets/";
